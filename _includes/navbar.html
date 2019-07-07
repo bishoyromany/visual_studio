@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="{{ site.url }}/assets/scss/navbar.css">
+<nav id="navbar">
+    <span class="menu-icon">
+        <!-- <svg viewBox="0 0 18 15" color="red" width="18px" height="15px">
+            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+        </svg> -->
+        <span class="icon-bar" style="margin-top : 0px;"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </span>
+
+    <a href="/" class="brand">
+        <img src="{{ site.url }}/assets/imgs/visual-studio.svg" alt="{{ page.title }}">
+        <span>{{ page.title }}</span>
+    </a>
+
+
+
+    <span class="drowDownMenu">
+        <ul class="pages"> 
+            {% for page in site.pages %}
+                {% if page.categories contains 'fruit' %}
+                <li>
+                    <a href="{{ page.permalink }}">{{page.title}}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+    
+            <ul class="search-download">
+                <li class="searchPhone">
+                    <a href="/Search" title="Search" class="btn search-btn" id="nav-search">
+                    Search
+                    <!-- <img class="search-icon" src="/assets/icons/search.svg" width="16px" height="16px" alt="Search"> -->
+                    <!-- <img class="search-icon-inverted" src="/assets/icons/search_dark.svg" width="16px" height="16px" alt="Search"> -->
+                    </a>
+                </li>
+                <li class="search">
+                <form class="nav-search search-form" action="/Search" aria-label="Search"> 
+                    <div class="input-group" aria-hidden="true">
+                        <input type="text" name="q" class="search-box form-control" placeholder="Search Docs" aria-label="Search text">
+                        <span class="input-group-btn">
+                            <button tabindex="0" class="btn" type="submit" aria-label="Search">
+                                <img class="search-icon" src="/assets/icons/search.svg" width="16px" height="16px" alt="Search">
+                                <!-- <img class="search-icon-inverted" src="/assets/icons/search_dark.svg" width="16px" height="16px" alt="Search"> -->
+                            </button>
+                        </span>
+                    </div>
+                </form>	                    
+                </li>
+                <!-- this was hiden in the home and download page, keeping it for now -->
+                <li class="download"><a itemprop="downloadUrl" class="link-button" href="/Download" id="nav-download">
+                    <img class="download-icon" src="/assets/icons/download.svg" width="16px" height="16px" alt="Download VS Code">
+                    <!-- <img class="download-icon-inverted" src="/assets/icons/download-black.svg" width="16px" height="16px" alt="Download VS Code"> -->
+                    <span class="hidden-sm">Download</span>
+                    </a>
+                </li>
+            </ul>
+    </div>
+    
+</nav> 
