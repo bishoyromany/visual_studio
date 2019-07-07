@@ -37,7 +37,7 @@
             <ul class="search-download nav navbar-nav navbar-right">
                 <!--  search link for phone -->
                 <li class="searchPhone">
-                    <a href="{{site.baseurl}}{{'/Search' | relative_url}}" title="Search" class="btn search-btn" id="nav-search">
+                    <a href="{{'/Search' | relative_url}}" title="Search" class="btn search-btn" id="nav-search">
                     Search
                     <!-- <img class="search-icon" src="/assets/icons/search.svg" width="16px" height="16px" alt="Search"> -->
                     <!-- <img class="search-icon-inverted" src="/assets/icons/search_dark.svg" width="16px" height="16px" alt="Search"> -->
@@ -45,13 +45,12 @@
                 </li>
                 <!--  search form for computer -->
                 <li class="search">
-                    <form class="nav-search search-form" action="{{site.baseurl}}{{'/Search' | relative_url}}" aria-label="Search"> 
+                    <form class="nav-search search-form" action="{{'/Search' | relative_url}}" aria-label="Search"> 
                         <div class="input-group" aria-hidden="true">
                             <input type="text" name="q" class="search-box form-control" placeholder="Search Docs" aria-label="Search text">
                             <span class="input-group-btn">
                                 <button tabindex="0" class="btn" type="submit" aria-label="Search">
-                                    <img class="search-icon" src="{{site.baseurl}}{{'/assets/icons/search.svg' | relative_url}}" width="16px" height="16px" alt="Search">
-                                    <!-- <img class="search-icon-inverted" src="/assets/icons/search_dark.svg" width="16px" height="16px" alt="Search"> -->
+                                    <img class="search-icon" src="{{'/assets/icons/search.svg' | relative_url}}" width="16px" height="16px" alt="Search">
                                 </button>
                             </span>
                         </div>
@@ -60,9 +59,8 @@
 
                 <!-- download software link -->
                 <li class="download">
-                    <a itemprop="downloadUrl" class="link-button" href="{{site.baseurl}}{{'/Download' | relative_url}}" id="nav-download">
-                        <img class="download-icon" src="{{site.baseurl}}{{'/assets/icons/download.svg' | relative_url}}" width="16px" height="16px" alt="Download VS Code">
-                        <!-- <img class="download-icon-inverted" src="/assets/icons/download-black.svg" width="16px" height="16px" alt="Download VS Code"> -->
+                    <a itemprop="downloadUrl" class="link-button" href="{{'/Download' | relative_url}}" id="nav-download">
+                        <img class="download-icon" src="{{'/assets/icons/download.svg' | relative_url}}" width="16px" height="16px" alt="Download VS Code">
                         <span class="hidden-sm">Download</span>
                     </a>
                 </li>
