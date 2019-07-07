@@ -11,29 +11,34 @@ $color : #fff;
 body{
     overflow-x: none;
     padding-top : 50px;
+    font-weight: 400;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: $color;
-    opacity: 1; /* Firefox */
+    color: $color !important;
+    opacity: 0.8; /* Firefox */
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: $color;
+    color: $color !important;
+    opacity: 0.8; /* Firefox */
   }
   
   ::-ms-input-placeholder { /* Microsoft Edge */
-    color: $color;
+    color: $color !important;
+    opacity: 0.8; /* Firefox */
   }
 
 #navbar{
-    width : 90vw;
-    padding : 0px 5vw 0px 5vw;
     background : $nav_background;
     color : $color;
     font-size: 16px;
     overflow : hidden;
-    position : fixed;
     top : 0px;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.33);
+    z-index : 100000;
+    .container{
+        padding : 0px !important;
+    }
     .brand{
         color : $color;
         text-decoration: none;
@@ -44,6 +49,7 @@ body{
         font-weight: 600;
         padding : 15px 15px;
         display: inline-block;
+        float : left;
         img{
             width : 20px;
             height : 20px;
@@ -53,6 +59,7 @@ body{
         }
     }
     .drowDownMenu{
+        display : inline;
     }
     .pages{
         list-style : none;
@@ -91,7 +98,7 @@ body{
                     input{
                         background: rgba(255,255,255,0.08);
                         border: none;
-                        height: 36px;
+                        height: 50px;
                         padding: 6px 15px 6px 40px;
                         border-radius: 0;
                         color: white;
@@ -99,6 +106,7 @@ body{
                         -moz-transition: opacity 0.08s ease-in;
                         -o-transition: opacity 0.08s ease-in;
                         transition: opacity 0.08s ease-in;
+                        margin-left : -4px; 
                         &:hover{
                             outline: 1px solid rgba(255,255,255,0.2);
                             outline-offset: -1px;
@@ -111,6 +119,7 @@ body{
                         z-index: 5;
                         top: 0px;
                         height: 50px;
+                        right: 163px;
                         background-color : transparent;
                         img{
                             vertical-align: middle;
@@ -124,12 +133,11 @@ body{
             }
         }
         .download{
-            padding-left: 40px;
             color: #fff;
             font-size: 16px;
             line-height: 100%;
-            padding: 17px 20px;
-            height: 15px;
+            padding: 17px 10px;
+            height: 50px;
             background-color: #477a32;
             margin-left : -5px;
             font-weight: bold;
@@ -139,6 +147,7 @@ body{
             a{
                 color : $color;
                 text-decoration : none;
+                display : inline;
             }
             img{
                 margin-right : 5px;
@@ -153,18 +162,19 @@ body{
 @media (max-width: 767px){
     #navbar{
         width : 100vw;
-        padding : 0px !important;
         .menu-icon{
-            display : block !important;
+            display : inline !important;
             cursor: pointer;
             float : right;
-            position: relative;
-            float: right;
             padding: 6.5px 7px;
             margin : 7px;
             background-color: transparent;
             border: 1px solid transparent;
             border-radius: 4px;
+            position: absolute;
+            top : 0px;
+            right : 0px;
+            cursor: pointer;
             &:focus , &:hover{
                 background-color: rgba(94,87,184,0.6);
             }
@@ -177,10 +187,17 @@ body{
                 margin-top : 4px;
             }
         }
+        .brand{
+            display : block;
+            width : 100%;
+        }
         .drowDownMenu{
-            display : block !important;
+            display : none;
         }
         .pages{
+            display: block;
+            width : 100%;
+            margin-top : 60px;
             li{
                 display : block;
                 width : 100%;
@@ -213,6 +230,7 @@ body{
             }
             .download{
                 width : 100%;
+                margin-left : -15px;
             }
         }
 

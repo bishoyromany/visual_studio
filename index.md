@@ -9,4 +9,6 @@ name : index
 ---
 
 
-this is my content
+<div class="home-page">
+    {% include homepage_section1.html %}
+</div>

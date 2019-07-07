@@ -6,31 +6,37 @@
 
 body {
   overflow-x: none;
-  padding-top: 50px; }
+  padding-top: 50px;
+  font-weight: 400; }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
-  opacity: 1;
+  color: #fff !important;
+  opacity: 0.8;
   /* Firefox */ }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #fff; }
+  color: #fff !important;
+  opacity: 0.8;
+  /* Firefox */ }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #fff; }
+  color: #fff !important;
+  opacity: 0.8;
+  /* Firefox */ }
 
 #navbar {
-  width: 90vw;
-  padding: 0px 5vw 0px 5vw;
   background: #373277;
   color: #fff;
   font-size: 16px;
   overflow: hidden;
-  position: fixed;
-  top: 0px; }
+  top: 0px;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.33);
+  z-index: 100000; }
+  #navbar .container {
+    padding: 0px !important; }
   #navbar .brand {
     color: #fff;
     text-decoration: none;
@@ -40,13 +46,16 @@ body {
     line-height: 20px;
     font-weight: 600;
     padding: 15px 15px;
-    display: inline-block; }
+    display: inline-block;
+    float: left; }
     #navbar .brand img {
       width: 20px;
       height: 20px;
       vertical-align: bottom;
       transform: scale(1.4);
       margin-right: 5px; }
+  #navbar .drowDownMenu {
+    display: inline; }
   #navbar .pages {
     list-style: none;
     margin: 0px;
@@ -76,14 +85,15 @@ body {
       #navbar .search-download .search form div input {
         background: rgba(255, 255, 255, 0.08);
         border: none;
-        height: 36px;
+        height: 50px;
         padding: 6px 15px 6px 40px;
         border-radius: 0;
         color: white;
         -webkit-transition: opacity 0.08s ease-in;
         -moz-transition: opacity 0.08s ease-in;
         -o-transition: opacity 0.08s ease-in;
-        transition: opacity 0.08s ease-in; }
+        transition: opacity 0.08s ease-in;
+        margin-left: -4px; }
         #navbar .search-download .search form div input:hover {
           outline: 1px solid rgba(255, 255, 255, 0.2);
           outline-offset: -1px;
@@ -94,6 +104,7 @@ body {
         z-index: 5;
         top: 0px;
         height: 50px;
+        right: 163px;
         background-color: transparent; }
         #navbar .search-download .search form div button img {
           vertical-align: middle;
@@ -102,12 +113,11 @@ body {
           right: 10px;
           opacity: 0.9; }
     #navbar .search-download .download {
-      padding-left: 40px;
       color: #fff;
       font-size: 16px;
       line-height: 100%;
-      padding: 17px 20px;
-      height: 15px;
+      padding: 17px 10px;
+      height: 50px;
       background-color: #477a32;
       margin-left: -5px;
       font-weight: bold; }
@@ -115,7 +125,8 @@ body {
         background-color: #58973e; }
       #navbar .search-download .download a {
         color: #fff;
-        text-decoration: none; }
+        text-decoration: none;
+        display: inline; }
       #navbar .search-download .download img {
         margin-right: 5px; }
   #navbar .menu-icon, #navbar .searchPhone {
@@ -123,19 +134,20 @@ body {
 
 @media (max-width: 767px) {
   #navbar {
-    width: 100vw;
-    padding: 0px !important; }
+    width: 100vw; }
     #navbar .menu-icon {
-      display: block !important;
+      display: inline !important;
       cursor: pointer;
-      float: right;
-      position: relative;
       float: right;
       padding: 6.5px 7px;
       margin: 7px;
       background-color: transparent;
       border: 1px solid transparent;
-      border-radius: 4px; }
+      border-radius: 4px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      cursor: pointer; }
       #navbar .menu-icon:focus, #navbar .menu-icon:hover {
         background-color: rgba(94, 87, 184, 0.6); }
       #navbar .menu-icon .icon-bar {
@@ -145,16 +157,23 @@ body {
         border-radius: 1px;
         background: #fff;
         margin-top: 4px; }
+    #navbar .brand {
+      display: block;
+      width: 100%; }
     #navbar .drowDownMenu {
-      display: block !important; }
-    #navbar .pages li {
+      display: none; }
+    #navbar .pages {
       display: block;
       width: 100%;
-      opacity: 1; }
-      #navbar .pages li a {
+      margin-top: 60px; }
+      #navbar .pages li {
         display: block;
         width: 100%;
-        padding: 10px; }
+        opacity: 1; }
+        #navbar .pages li a {
+          display: block;
+          width: 100%;
+          padding: 10px; }
     #navbar .search-download {
       width: 100%; }
       #navbar .search-download .search {
@@ -171,6 +190,7 @@ body {
           width: 100%;
           text-decoration: none; }
       #navbar .search-download .download {
-        width: 100%; } }
+        width: 100%;
+        margin-left: -15px; } }
 
 /*# sourceMappingURL=navbar.css.map */

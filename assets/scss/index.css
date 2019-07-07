@@ -1,3 +1,178 @@
+.home-page .update-banner {
+  padding: 10px;
+  text-align: center;
+  background-color: #e3e3e3;
+  color: #1e1e1e;
+  font-size: 1.6rem; }
+  .home-page .update-banner a {
+    color: #0258e2;
+    text-decoration: none; }
+    .home-page .update-banner a:hover {
+      text-decoration: underline; }
+.home-page .jumbotron {
+  padding-top: 30px;
+  background: #373277;
+  color: #FFF; }
+  .home-page .jumbotron .left {
+    margin: 0px -15px; }
+    .home-page .jumbotron .left h1 {
+      text-align: center;
+      font-size: 5rem;
+      font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+      font-weight: 100;
+      color: inherit;
+      margin: .67em 0px 10px;
+      line-height: 1.1em; }
+      .home-page .jumbotron .left h1 strong {
+        display: block;
+        font-weight: normal; }
+    .home-page .jumbotron .left .lead p {
+      font-weight: 300;
+      font-size: 1.7rem;
+      color: rgba(255, 255, 255, 0.6);
+      text-align: center; }
+    .home-page .jumbotron .left #download-buttons {
+      padding: 0;
+      max-width: 27.7rem;
+      position: relative;
+      margin: auto; }
+      .home-page .jumbotron .left #download-buttons .primary-buttons {
+        margin-top: 25px;
+        overflow: hidden; }
+        .home-page .jumbotron .left #download-buttons .primary-buttons .link-button {
+          height: 6.5rem;
+          color: white;
+          background-color: #477a32;
+          display: inline-block;
+          position: relative;
+          cursor: pointer; }
+          .home-page .jumbotron .left #download-buttons .primary-buttons .link-button:focus, .home-page .jumbotron .left #download-buttons .primary-buttons .link-button:hover {
+            background-color: #58973e; }
+        .home-page .jumbotron .left #download-buttons .primary-buttons .left-btn {
+          width: CALC(100% - 45px); }
+          .home-page .jumbotron .left #download-buttons .primary-buttons .left-btn span {
+            position: absolute;
+            top: 10px;
+            display: block;
+            font-size: 17px;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            left: 0px;
+            opacity: 0.9; }
+          .home-page .jumbotron .left #download-buttons .primary-buttons .left-btn .build-type {
+            position: absolute;
+            display: block;
+            text-align: center;
+            width: 100%;
+            left: 0px;
+            top: 35px;
+            font-size: 14px;
+            opacity: 0.7; }
+        .home-page .jumbotron .left #download-buttons .primary-buttons #download-dropdown {
+          width: 43px;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          padding-left: 10px;
+          padding-right: 10px; }
+          .home-page .jumbotron .left #download-buttons .primary-buttons #download-dropdown img {
+            width: 16px;
+            height: 16px; }
+      .home-page .jumbotron .left #download-buttons #download-matrix {
+        white-space: nowrap;
+        background: #e1e1e1;
+        border: 2px #477a32 solid;
+        position: absolute;
+        z-index: 1;
+        -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.33);
+        -moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.33);
+        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.33);
+        display: none;
+        color: black; }
+        .home-page .jumbotron .left #download-buttons #download-matrix thead tr td, .home-page .jumbotron .left #download-buttons #download-matrix thead tr th {
+          padding: 10px;
+          font-weight: 400; }
+        .home-page .jumbotron .left #download-buttons #download-matrix thead tr .build-header-white {
+          background-color: #eeeeef; }
+        .home-page .jumbotron .left #download-buttons #download-matrix td {
+          font-weight: 400;
+          padding: 10px;
+          text-align: center; }
+          .home-page .jumbotron .left #download-buttons #download-matrix td img {
+            width: 20px;
+            height: 20px;
+            margin: 0px auto; }
+        .home-page .jumbotron .left #download-buttons #download-matrix td.white {
+          background-color: #eeeeef; }
+        .home-page .jumbotron .left #download-buttons #download-matrix .os, .home-page .jumbotron .left #download-buttons #download-matrix .download-type {
+          text-align: left; }
+        .home-page .jumbotron .left #download-buttons #download-matrix .os {
+          font-weight: bold; }
+        .home-page .jumbotron .left #download-buttons #download-matrix .os-group tr td {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.336); }
+        .home-page .jumbotron .left #download-buttons #download-matrix .special1 td {
+          padding-top: 10px;
+          padding-bottom: 0px;
+          border-bottom: none !important; }
+        .home-page .jumbotron .left #download-buttons #download-matrix .special2 td {
+          padding-bottom: 10px;
+          padding-top: 0px; }
+        .home-page .jumbotron .left #download-buttons #download-matrix #other-downloads {
+          text-align: center; }
+          .home-page .jumbotron .left #download-buttons #download-matrix #other-downloads a {
+            color: #0258e2;
+            text-decoration: none; }
+            .home-page .jumbotron .left #download-buttons #download-matrix #other-downloads a:hover {
+              text-decoration: underline;
+              color: #23527c; }
+    .home-page .jumbotron .left #download-matrix-label {
+      font-size: 1.4rem;
+      margin-bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -o-border-radius: 8px;
+      border-radius: 8px;
+      padding: 8px 8px;
+      margin-top: 1.5rem;
+      position: relative;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.6); }
+      .home-page .jumbotron .left #download-matrix-label::after {
+        content: '';
+        width: 1.4rem;
+        height: 1.4rem;
+        display: block;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background: #272354;
+        position: absolute;
+        top: -.7rem;
+        right: 1.45rem; }
+      .home-page .jumbotron .left #download-matrix-label a {
+        color: #b5a0ff; }
+    .home-page .jumbotron .left .terms {
+      padding: 4px 8px;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 12px;
+      margin-top: 1rem;
+      display: inline-block;
+      width: 100%; }
+      .home-page .jumbotron .left .terms a {
+        color: #b5a0ff;
+        display: block; }
+  .home-page .jumbotron .right-section {
+    margin-right: -7%; }
+    .home-page .jumbotron .right-section .screenshot img {
+      width: 100%;
+      height: auto; }
 
+@media only screen and (max-width: 767px) {
+  .home-page .jumbotron .left #download-buttons #download-matrix {
+    font-size: 13px !important; }
+    .home-page .jumbotron .left #download-buttons #download-matrix td {
+      padding: 5px; } }
 
 /*# sourceMappingURL=index.css.map */

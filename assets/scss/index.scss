@@ -1,0 +1,258 @@
+// all vars
+$color : #FFF;
+$back1 : #e3e3e3;
+$back2 : #373277;
+
+// the home page style all
+.home-page{
+    // updater banner
+    .update-banner{
+        padding : 10px;
+        text-align: center;
+        background-color: $back1;
+        color: #1e1e1e;
+        font-size: 1.6rem;
+        a{
+            color : #0258e2;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    // the section uner updater banner
+    .jumbotron{
+        padding-top : 30px;
+        background : $back2;
+        color : $color;
+        .left{
+            margin : 0px -15px;
+            h1{
+                text-align : center;
+                font-size: 5rem;
+                font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+                font-weight: 100;
+                color: inherit;
+                margin: .67em 0px 10px;
+                line-height: 1.1em;
+                strong{
+                    display: block;
+                    font-weight: normal;
+                }
+            }
+            .lead p{
+                font-weight: 300;
+                font-size: 1.7rem;
+                color: rgba(255,255,255,0.6);
+                text-align : center;
+            }
+            // download buttons
+            #download-buttons{
+                padding: 0;
+                max-width: 27.7rem;
+                position: relative;
+                margin: auto;
+                // buttons
+                .primary-buttons{
+                    margin-top : 25px;
+                    overflow : hidden;
+                    .link-button{
+                        height: 6.5rem;
+                        color: white;
+                        background-color: #477a32;
+                        display : inline-block;
+                        position : relative;
+                        cursor: pointer;
+                        &:focus , &:hover{
+                            background-color: #58973e;
+                        }
+                    }
+                    .left-btn{
+                        width : CALC(100% - 45px);
+                        span{
+                            position: absolute;
+                            top: 10px;
+                            display: block;
+                            font-size: 17px;
+                            font-weight: bold;
+                            text-align: center;
+                            width: 100%;
+                            left: 0px;
+                            opacity: 0.9;
+                        }
+                        .build-type{
+                            position: absolute;
+                            display: block;
+                            text-align: center;
+                            width: 100%;
+                            left: 0px;
+                            top: 35px;
+                            font-size : 14px;
+                            opacity : 0.7;
+                        }
+                    }
+                    #download-dropdown{
+                        width : 43px;
+                        position: absolute;
+                        top : 0px;
+                        right : 0px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        img{
+                            width : 16px;
+                            height : 16px;
+                        }
+                    }
+                }
+                // table
+                #download-matrix{
+                    white-space: nowrap;
+                    background: #e1e1e1;
+                    border: 2px #477a32 solid;
+                    position: absolute;
+                    z-index: 1;
+                    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.33);
+                    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.33);
+                    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.33);
+                    display: none;
+                    color: black;
+                    thead{
+                        tr td , tr th{
+                            padding : 10px;
+                            font-weight : 400;
+                        }
+                        tr .build-header-white{
+                            background-color : #eeeeef;
+                        }
+                    }
+                    td{
+                        font-weight : 400;
+                        padding : 10px;
+                        text-align : center;
+                        img{
+                            width : 20px;
+                            height : 20px;
+                            margin : 0px auto;
+                        }
+                    }
+                    td.white{
+                        background-color : #eeeeef;
+                    }
+                    .os , .download-type{
+                        text-align : left;
+                    }
+                    .os{
+                        font-weight: bold;
+                    }
+                    .os-group tr td{
+                        border-bottom : 1px solid rgba(0, 0, 0, 0.336);
+                    }
+                    .special1{
+                        td{
+                            padding-top : 10px;
+                            padding-bottom : 0px;
+                            border-bottom : none !important;
+                        }
+                    }
+                    .special2{
+                        td{
+                            padding-bottom: 10px;
+                            padding-top : 0px;
+                        }
+                    }
+                    #other-downloads{
+                        text-align: center;
+                        a{
+                            color : #0258e2;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                                color: #23527c;
+                            }
+                        }
+                    }
+                }
+
+
+            }
+            // download matrix
+            #download-matrix-label{
+                font-size: 1.4rem;
+                margin-bottom: 0;
+                background: rgba(0,0,0,0.3);
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                -o-border-radius: 8px;
+                border-radius: 8px;
+                padding: 8px 8px;
+                margin-top: 1.5rem;
+                position: relative;
+                font-weight: 300;
+                color: rgba(255,255,255,0.6);
+                &::after{
+                    content: '';
+                    width: 1.4rem;
+                    height: 1.4rem;
+                    display: block;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    background: #272354;
+                    position: absolute;
+                    top: -.7rem;
+                    right: 1.45rem;
+                }
+                a{
+                    color: #b5a0ff;
+                }
+            }
+            // terms
+            .terms{
+                padding: 4px 8px;
+                color: rgba(255,255,255,0.6);
+                font-size: 12px;
+                margin-top: 1rem;
+                display: inline-block;
+                width: 100%;
+                a{
+                    color: #b5a0ff;
+                    display : block;
+                }
+            }
+        }
+
+        // screen shot
+        .right-section{
+            margin-right : -7%;
+            .screenshot{
+                img{
+                    width: 100%;
+                    height : auto;
+                }
+            }
+        }
+
+    }
+}
+
+
+@media only screen and (max-width : 767px){
+    .home-page{
+
+        .jumbotron {
+
+            .left{
+
+                #download-buttons{
+
+                    #download-matrix{
+                        font-size : 13px !important;
+                        td{
+                            padding : 5px;
+                        }
+                    }
+                } 
+            } 
+        }
+    } 
+}

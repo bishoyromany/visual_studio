@@ -18,11 +18,16 @@
     <script type="application/ld+json">
     {"@type":"WebPage","url":"{{ site.url }}","description":"{{ site.description }}","headline":"Docs","@context":"https://schema.org"}</script>
     <!-- end SEO tags -->
-    <link rel="stylesheet" href="{{ site.url }}/assets/scss/index.css">
-    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Visual Studio Code - Code Editing. Redefined" />
+    <!-- <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Visual Studio Code - Code Editing. Redefined" /> -->
   </head>
   <body>
-      {% include navbar.html %}
-      {{ content }}
+    {% include navbar.html %}
+
+    {{ content }}
+    
+    <!-- style -->
+    <link rel="stylesheet" href="{{ '/assets/scss/index.css' | relative_url }}">
+    <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
+    <!-- scripts -->
   </body>
 </html>
