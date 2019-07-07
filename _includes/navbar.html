@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ site.url }}/assets/scss/navbar.css">
+<link rel="stylesheet" href='{{ "/assets/scss/navbar.css" | relative_url }}'>
 <nav id="navbar">
     <span class="menu-icon">
         <!-- <svg viewBox="0 0 18 15" color="red" width="18px" height="15px">
@@ -10,7 +10,7 @@
     </span>
 
     <a href="/" class="brand">
-        <img src="{{ site.url }}/assets/imgs/visual-studio.svg" alt="{{ page.title }}">
+        <img src="{{'/assets/imgs/visual-studio.svg' | relative_url}}" alt="{{ page.title }}">
         <span>{{ page.title }}</span>
     </a>
 
@@ -21,7 +21,7 @@
             {% for page in site.pages %}
                 {% if page.categories contains 'fruit' %}
                 <li>
-                    <a href="{{ page.permalink }}">{{page.title}}</a>
+                    <a href="{{ page.permalink | relative_url}}">{{page.title}}</a>
                 </li>
                 {% endif %}
             {% endfor %}
