@@ -29,7 +29,7 @@
     
             <ul class="search-download">
                 <li class="searchPhone">
-                    <a href="/Search" title="Search" class="btn search-btn" id="nav-search">
+                    <a href="{{'/Search'}}" title="Search" class="btn search-btn" id="nav-search">
                     Search
                     <!-- <img class="search-icon" src="/assets/icons/search.svg" width="16px" height="16px" alt="Search"> -->
                     <!-- <img class="search-icon-inverted" src="/assets/icons/search_dark.svg" width="16px" height="16px" alt="Search"> -->
@@ -41,7 +41,7 @@
                         <input type="text" name="q" class="search-box form-control" placeholder="Search Docs" aria-label="Search text">
                         <span class="input-group-btn">
                             <button tabindex="0" class="btn" type="submit" aria-label="Search">
-                                <img class="search-icon" src="/assets/icons/search.svg" width="16px" height="16px" alt="Search">
+                                <img class="search-icon" src="{{'/assets/icons/search.svg'}}" width="16px" height="16px" alt="Search">
                                 <!-- <img class="search-icon-inverted" src="/assets/icons/search_dark.svg" width="16px" height="16px" alt="Search"> -->
                             </button>
                         </span>
@@ -49,8 +49,8 @@
                 </form>	                    
                 </li>
                 <!-- this was hiden in the home and download page, keeping it for now -->
-                <li class="download"><a itemprop="downloadUrl" class="link-button" href="/Download" id="nav-download">
-                    <img class="download-icon" src="/assets/icons/download.svg" width="16px" height="16px" alt="Download VS Code">
+                <li class="download"><a itemprop="downloadUrl" class="link-button" href="{{'/Download'}}" id="nav-download">
+                    <img class="download-icon" src="{{'/assets/icons/download.svg'}}" width="16px" height="16px" alt="Download VS Code">
                     <!-- <img class="download-icon-inverted" src="/assets/icons/download-black.svg" width="16px" height="16px" alt="Download VS Code"> -->
                     <span class="hidden-sm">Download</span>
                     </a>
