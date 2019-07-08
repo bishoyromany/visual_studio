@@ -1,10 +1,11 @@
 <div id="alt-downloads" class="swimlane alt-downloads download-buttons win">
         <div class="buttons">
           <div class="download">
-            <div class="logo windows"></div>
+            <div class="logo windows" 
+            style="background : url({{'/assets/imgs/windows-logo.png' | relative_url}}) center center no-repeat;"></div>
             <button class="link-button dlink" data-os="win" aria-label="Windows download" role="link">
-              <img class="download-icon" src="/assets/icons/download.svg" width="18px" height="18px" alt="Download VS Code">
-              <img class="download-icon-accessible" src="/assets/icons/download-black.svg" width="18px" height="18px" alt="Download VS Code"> Windows
+              <img class="download-icon" src="{{ '/assets/icons/download.svg' | relative_url }}" width="18px" height="18px" alt="Download VS Code">
+              Windows
               <small>Windows 7, 8, 10</small>
             </button>
       
@@ -36,14 +37,15 @@
           </div>
       
           <div class="download">
-            <div class="logo linux"></div>
+            <div class="logo linux"
+            style="background : url({{'/assets/imgs/linux-logo.png' | relative_url}}) center center no-repeat;"></div>
             <button class="link-button dlink" data-os="linux64_deb" aria-label="Linux Debian Ubuntu download" role="link">
-              <img class="download-icon" src="/assets/icons/download.svg" width="18px" height="18px" alt="Download VS Code">
-              <img class="download-icon-accessible" src="/assets/icons/download-black.svg" width="18px" height="18px" alt="Download VS Code"> .deb
+              <img class="download-icon" src="{{ '/assets/icons/download.svg' | relative_url }}" width="18px" height="18px" alt="Download VS Code">
+              .deb
               <small>Debian, Ubuntu</small></button>
             <button class="link-button dlink" data-os="linux64_rpm" aria-label="Linux Red Hat Fedora SUSE download" role="link">
-              <img class="download-icon" src="/assets/icons/download.svg" width="18px" height="18px" alt="Download VS Code">
-              <img class="download-icon-accessible" src="/assets/icons/download-black.svg" width="18px" height="18px" alt="Download VS Code"> .rpm
+              <img class="download-icon" src="{{ '/assets/icons/download.svg' | relative_url }}" width="18px" height="18px" alt="Download VS Code">
+              .rpm
               <small>Red Hat, Fedora, SUSE</small>
             </button>
       
@@ -73,10 +75,11 @@
       
           </div>
           <div class="download">
-            <div class="logo mac"></div>
+            <div class="logo mac" 
+            style="background : url({{'/assets/imgs/apple-logo.svg' | relative_url}}) center center no-repeat;"></div>
             <button class="link-button dlink" data-os="osx" aria-label="Mac download" role="link">
-              <img class="download-icon" src="/assets/icons/download.svg" width="18px" height="18px" alt="Download VS Code">
-              <img class="download-icon-accessible" src="/assets/icons/download-black.svg" width="18px" height="18px" alt="Download VS Code"> Mac
+              <img class="download-icon" src="{{ '/assets/icons/download.svg' | relative_url }}" width="18px" height="18px" alt="Download VS Code">
+              Mac
               <small>macOS 10.10+</small></button>
           </div>
         </div>

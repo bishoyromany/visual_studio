@@ -63,7 +63,6 @@ h1, h2, h3 {
                 margin: auto;
                 // buttons
                 .primary-buttons{
-                    margin-top : 25px;
                     overflow : hidden;
                     .link-button{
                         height: 6.5rem;
@@ -72,12 +71,14 @@ h1, h2, h3 {
                         display : inline-block;
                         position : relative;
                         cursor: pointer;
+                        margin-top : 0px;
                         &:focus , &:hover{
                             background-color: #58973e;
                         }
                     }
                     .left-btn{
-                        width : CALC(100% - 45px);
+                        width : CALC(100% - 40px);
+                        float : left;
                         span{
                             position: absolute;
                             top: 10px;
@@ -95,7 +96,7 @@ h1, h2, h3 {
                             text-align: center;
                             width: 100%;
                             left: 0px;
-                            top: 35px;
+                            top: 15px;
                             font-size : 14px;
                             opacity : 0.7;
                         }
@@ -104,9 +105,10 @@ h1, h2, h3 {
                         width : 43px;
                         position: absolute;
                         top : 0px;
-                        right : 0px;
+                        right : -5px;
                         padding-left: 10px;
                         padding-right: 10px;
+                        margin-top : 0px;
                         img{
                             width : 16px;
                             height : 16px;
@@ -444,7 +446,70 @@ h1, h2, h3 {
         }
     }
     // downloads
+    .alt-downloads {
+        text-align : center;
+        .download {
+            padding: 0 25px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .logo {
+            height: 100px;
+            width: 100px;
+            background-size: contain !important;
+            margin: 0 auto;
+            -ms-high-contrast-adjust: none;
+        }
+        .link-button {
+            color: white;
+            margin: 20px 0 5px;
+            padding: 10px 0;
+            font-size: 1.8rem;
+            width: 240px;
+            background-color: #373277;
+            font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            &:hover{
+                background-color: rgba(55,50,119,0.8);
+            }
+            img{
+                position: relative;
+                top: -2px;
+                margin-right: 10px;
+            }
+            small{
+                display: block;
+                margin-top: 0.75rem;
+                color: rgba(255,255,255,0.65);
+                font-size: 1.2rem;
+            }
+        }
+        .link-button[data-os='linux64_deb'], .link-button[data-os='linux64_rpm'] {
+            width: 147px;
+        }
+        .download-icon {
+            display: inline;
+        }
+        .win-downloads {
+            width: 94%;
+        }
+        .win-downloads, .linux-downloads {
+            margin-top: 16px;
+            margin-left: auto;
+            margin-right: auto;
+            td{
+                padding : 0px 7px;
+            }
+            strong{
+                font-weight : 400;
+            }
+            a{
+                font-weight : 500;
+            }
+        }
 
+    }
 }
 
 
@@ -467,6 +532,7 @@ h1, h2, h3 {
             } 
         }
 
+
         // carousel
         .social-proof>.container {
             padding-left: 3rem;
@@ -476,6 +542,23 @@ h1, h2, h3 {
             font-weight: 400;
             font-size: 1.4rem;
             line-height: 2.4rem;
+        }
+
+        // getting start
+        .getting-started {
+            .vscode-for {
+                height: initial;
+                h2{
+                    text-align : center;
+                    font-size : 2rem;
+                    top: initial;
+                    margin-top: initial;
+                    margin-bottom: 40px;
+                }
+            }
+            .supported-languages-list {
+                text-align: center;
+            }
         }
     } 
 }
