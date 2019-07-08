@@ -7,6 +7,17 @@ h1, h2, h3 {
     font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
     font-weight: 100;
 }
+h4, .faux-h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+a{
+    color: #0072be;
+    &:hover , &:focus{
+        color: #23527c;
+    }
+}
 // the home page style all
 .home-page{
     // updater banner
@@ -448,6 +459,9 @@ h1, h2, h3 {
     // downloads
     .alt-downloads {
         text-align : center;
+        &.swimlane{
+            padding-bottom: 0px;
+        }
         .download {
             padding: 0 25px;
             display: inline-block;
@@ -504,14 +518,80 @@ h1, h2, h3 {
             strong{
                 font-weight : 400;
             }
-            a{
-                font-weight : 500;
+        }
+        
+        .swimlane{
+            padding-top : 0px;
+            background-color: #f5f5f5;
+            .terms{
+                color: rgb(108, 108, 108);
+            }
+            h2 {
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+                color: rgb(68, 68, 68);
+                font-size: 2.1rem;
+            }
+            .call-to-action {
+                font-size: 1.8rem;
+                color: rgb(68, 68, 68);
+            }
+            .alt-downloads{
+                p{
+                    font-size: 1.4rem;
+                }
             }
         }
 
     }
 }
 
+
+@media (min-width: 768px){
+    h3, .faux-h3 {
+        font-size: 2.2rem;
+    }
+    h2, .faux-h2 {
+        font-size: 2.6rem;
+    }
+    // carousel
+    .social-proof {
+        .carousel-control.left{
+            .glyphicon {
+                margin-left: -4rem;
+            }
+        }
+        .carousel-control.right {
+            .glyphicon{
+                margin-right: -6rem;
+            }
+        } 
+    }
+    // intellegence
+    #meet-intellisense{
+        .screenshot {
+            margin-top: 28px;
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .social-proof .tweets>div {
+        flex-basis: 0;
+    }
+    .social-proof .tweets>div:not(:last-child) {
+        border-right: #f2f2f2 solid 1px;
+    }
+}
+
+@media (min-width: 1200px){
+    .social-proof .tweet-body {
+        min-height: 12rem;
+    }
+    .alt-downloads .terms {
+        padding: 20px 20%;
+    }
+}
 
 @media only screen and (max-width : 767px){
     .home-page{
@@ -561,44 +641,4 @@ h1, h2, h3 {
             }
         }
     } 
-}
-
-@media (min-width: 992px){
-    .social-proof .tweets>div {
-        flex-basis: 0;
-    }
-    .social-proof .tweets>div:not(:last-child) {
-        border-right: #f2f2f2 solid 1px;
-    }
-}
-
-@media (min-width: 1200px){
-    .social-proof .tweet-body {
-        min-height: 12rem;
-    }
-}
-
-@media (min-width: 768px){
-    h2, .faux-h2 {
-        font-size: 2.6rem;
-    }
-    // carousel
-    .social-proof {
-        .carousel-control.left{
-            .glyphicon {
-                margin-left: -4rem;
-            }
-        }
-        .carousel-control.right {
-            .glyphicon{
-                margin-right: -6rem;
-            }
-        } 
-    }
-    // intellegence
-    #meet-intellisense{
-        .screenshot {
-            margin-top: 28px;
-        }
-    }
 }

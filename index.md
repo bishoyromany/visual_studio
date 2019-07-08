@@ -19,4 +19,5 @@ name : index
     {% include homepage/homepage_section7.html %}
     {% include homepage/homepage_section8.html %}
     {% include homepage/homepage_section9.html %}
+    {% include homepage/homepage_section10.html %}
 </div>
