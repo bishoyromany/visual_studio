@@ -11,4 +11,6 @@ name : index
 
 <div class="home-page">
     {% include homepage_section1.html %}
+    {% include homepage_section2.html %}
+    {% include homepage_section3.html %}
 </div>
