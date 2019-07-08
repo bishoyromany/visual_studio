@@ -10,7 +10,13 @@ name : index
 
 
 <div class="home-page">
-    {% include homepage_section1.html %}
-    {% include homepage_section2.html %}
-    {% include homepage_section3.html %}
+    {% include homepage/homepage_section1.html %}
+    {% include homepage/homepage_section2.html %}
+    {% include homepage/homepage_section3.html %}
+    {% include homepage/homepage_section4.html %}
+    {% include homepage/homepage_section5.html %}
+    {% include homepage/homepage_section6.html %}
+    {% include homepage/homepage_section7.html %}
+    {% include homepage/homepage_section8.html %}
+    {% include homepage/homepage_section9.html %}
 </div>

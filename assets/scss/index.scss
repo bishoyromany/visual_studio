@@ -3,6 +3,10 @@ $color : #FFF;
 $back1 : #e3e3e3;
 $back2 : #373277;
 
+h1, h2, h3 {
+    font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+    font-weight: 100;
+}
 // the home page style all
 .home-page{
     // updater banner
@@ -348,6 +352,99 @@ $back2 : #373277;
             background-position: 50% 50%;
         }
     }
+    // sections auner carousel the global class swimlane
+    .swimlane {
+        padding: 6rem 0 6rem;
+        min-height: 30rem;
+        position: relative;
+        h2 {
+            margin-bottom: 3.5rem;
+        }
+        p{
+            line-height: 4rem;
+            font-size: 1.5rem;
+        }
+    }
+    .swimlane:nth-child(even) {
+        background-color: #f5f5f5;
+    }
+
+    // extensions
+    .hundreds-extensions .hundreds-extensions-img {
+        width: 100%;
+        display: block;
+        margin-top: 28px;
+        padding: 0;
+        transition: transform 0.5s ease-out;
+        &:hover{
+            transform : scale(1.1);
+        }
+    }
+    // getting start
+    .getting-started {
+        padding: 50px 0;
+        .vscode-for {
+            height: 20.5rem;
+            h2 {
+                text-align: right;
+                margin-top: -1.6rem;
+                position: relative;
+                top: 50%;
+            }
+        }
+        .home-languages-list-parent {
+            height: 20.5rem;
+        }
+        .mask {
+            background: linear-gradient(to bottom, #fff, rgba(255,255,255,0), rgba(255,255,255,0), #fff);
+            z-index: 990;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: -20px;
+        }
+        .supported-languages-list {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .supported-languages-list>ul {
+            height: 100%;
+            width: 100%;
+            box-sizing: content-box;
+            padding-right: 20px;
+            overflow-y: scroll;
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 0;
+        }
+        .supported-languages-list>ul li {
+            font-size: 3rem;
+        }
+
+        // caption
+        .caption {
+            text-align: center;
+            margin-top: 20px;
+            .link-button {
+                background-color: #373277;
+                color: white;
+                margin: 20px 0;
+                font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+                font-weight: 600;
+                font-size: 20px;
+                padding: 15px 35px;
+                display: inline-block;
+                cursor: pointer;
+                text-decoration : none;
+                &:hover{
+                    background-color: rgba(55,50,119,0.8);
+                }
+            }
+        }
+    }
+    // downloads
+
 }
 
 
@@ -383,7 +480,6 @@ $back2 : #373277;
     } 
 }
 
-
 @media (min-width: 992px){
     .social-proof .tweets>div {
         flex-basis: 0;
@@ -392,12 +488,18 @@ $back2 : #373277;
         border-right: #f2f2f2 solid 1px;
     }
 }
+
 @media (min-width: 1200px){
     .social-proof .tweet-body {
         min-height: 12rem;
     }
 }
+
 @media (min-width: 768px){
+    h2, .faux-h2 {
+        font-size: 2.6rem;
+    }
+    // carousel
     .social-proof {
         .carousel-control.left{
             .glyphicon {
@@ -409,5 +511,11 @@ $back2 : #373277;
                 margin-right: -6rem;
             }
         } 
+    }
+    // intellegence
+    #meet-intellisense{
+        .screenshot {
+            margin-top: 28px;
+        }
     }
 }
